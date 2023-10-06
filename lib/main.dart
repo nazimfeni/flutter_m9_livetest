@@ -47,7 +47,7 @@ class _ButtonColorChangeScreenState extends State<ButtonColorChangeScreen> {
       body: Center(
         child: GridView.count(
           shrinkWrap: true,
-          crossAxisCount: 4, // Change the number of columns as needed
+          crossAxisCount: 4,
           padding: const EdgeInsets.all(16.0),
           mainAxisSpacing: 16.0,
           crossAxisSpacing: 16.0,
@@ -58,8 +58,7 @@ class _ButtonColorChangeScreenState extends State<ButtonColorChangeScreen> {
                 return handleButtonTap(size);
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: size == selectedSize ? Colors.amber : Colors.grey, // Change color based on selection
-
+                backgroundColor: size == selectedSize ? Colors.amber : Colors.grey,
               ),
               child: Text(size),
             );
