@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,6 +16,8 @@ class MyApp extends StatelessWidget {
 }
 
 class ButtonColorChangeScreen extends StatefulWidget {
+  const ButtonColorChangeScreen({super.key});
+
   @override
   _ButtonColorChangeScreenState createState() => _ButtonColorChangeScreenState();
 }
@@ -37,20 +41,20 @@ class _ButtonColorChangeScreenState extends State<ButtonColorChangeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Size Selector'),
+        title: const Text('Size Selector'),
         centerTitle: true,
       ),
       body: Center(
         child: GridView.count(
           shrinkWrap: true,
           crossAxisCount: 4, // Change the number of columns as needed
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           mainAxisSpacing: 16.0,
           crossAxisSpacing: 16.0,
           children: buttonSizes.map((size) {
             return ElevatedButton(
               onPressed: () {
-                MySnackBar("You have pressed size: ${size}", context);
+                MySnackBar("You have pressed size: $size", context);
                 return handleButtonTap(size);
               },
               style: ElevatedButton.styleFrom(
