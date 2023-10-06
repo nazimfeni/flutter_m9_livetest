@@ -1,6 +1,7 @@
 # flutter_m9_livetest
 
 A new Flutter project.
+<img src="https://github.com/nazimfeni/flutter_m9_livetest/blob/master/screenshot/screen.png" width="200" height="400" alt="Potrait image">
 
 ## Getting Started
 
